@@ -1,0 +1,7 @@
+.flex{
+    display: flex;
+}
+.flex input {
+    margin-left: 700px;
+    margin-right: 10px;
+}

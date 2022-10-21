@@ -1,0 +1,262 @@
+<div class=" container-fluid home-comp">
+<div class="mb-3">
+  <!-- carousel -->
+<div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="true">
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+    </div>
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="https://static2.medplusmart.com/live/bannerImage/Mart/1fe15a254c716dc11124533ee5440c2d.jpg" class="d-block w-100 " alt="...">
+      </div>
+      <div class="carousel-item">
+        <img src="https://static2.medplusmart.com/live/bannerImage/Mart/a81099a54b1a6d9f0353f5ba6e388d99.jpg" class="d-block w-100" alt="...">
+      </div>
+      <div class="carousel-item">
+        <img src="https://static2.medplusmart.com/live/bannerImage/Mart/509331eb6abcc437c2eb7d9d52c52b89.jpg" class="d-block w-100" alt="...">
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+</div>
+<!-- category-->
+
+<div class="calegory mb-4">
+  <div class="head mb-4">
+    <span>Shop by Category</span>
+  </div>
+<div class="row gx-4">
+  <div class="col text-center" *ngFor="let data of category" (click)="router.navigate(['product'],{state:{data:data}})">
+    <img src={{data.image}} class="rounded-circle mb-2"  alt="nonload">
+      <span class="title">{{data.category}}</span>
+  </div>
+</div>
+</div>
+
+<!-- banner -->
+<div class="banner mb-4">
+  <img src="https://static2.medplusmart.com/live/bannerImage/Mart/4f5b4dc383bb56faf1b4a53e09d02694.jpg"/>
+</div>
+
+<!-- cards offer -->
+<div class="calegory mb-4">
+  <div class="head">
+    <span>Top Offer</span> </div>
+    <div class="row gx-4">
+      <div class="card" style="width:150px; border: 0; margin-top: 10px;">
+        <img src="https://static2.medplusmart.com/products/_609d26_/VICK0011_S.jpg" class="card-img-top" alt="non">
+          <!-- <h5 class="card-title">Card title</h5> -->
+          <p class="card-text">VICKS VAPORUB CREAM 110ML.</p>
+          <P style="color: red;">RS 430</P>
+          <a href="#" class="btn btn-danger">Add to Cart</a>
+      </div>
+      <div class="card" style="width:150px; border: 0; margin-top: 10px; margin-left: 40px;">
+        <img src="https://static2.medplusmart.com/products/_9f33cd_/COMP0016_S.jpg" class="card-img-top" alt="non">
+          <!-- <h5 class="card-title">Card title</h5> -->
+          <p>COMPLAN REFILL1KG.</p>
+          <P style="color: red;">RS 430</P>
+          <a href="#" class="btn btn-danger">Add to Cart</a>
+      </div>
+      <div class="card" style="width:150px; border: 0; margin-top: 10px; margin-left: 40px;">
+        <img src="https://static2.medplusmart.com/products/_88852b_/PAMP0169_S.jpg" class="card-img-top" alt="non">
+          <!-- <h5 class="card-title">Card title</h5> -->
+          <p class="card-text">PAMPERS 10 PACK.</p>
+          <P style="color: red;">RS 430</P>
+          <a href="#" class="btn btn-danger">Add to Cart</a>
+      </div>
+      <div class="card" style="width:150px; border: 0; margin-top: 10px; margin-left: 40px;">
+        <img src="https://static2.medplusmart.com/products/_2999b7e_/HORL0072_S.jpg" class="card-img-top" alt="non">
+          <!-- <h5 class="card-title">Card title</h5> -->
+          <p class="card-text">HORLICKS PROTEIN PLUS.</p>
+          <P style="color: red;">RS 430</P>
+          <a href="#" class="btn btn-danger">Add to Cart</a>
+      </div>
+      <div class="card" style="width:150px; border: 0; margin-top: 10px; margin-left: 40px;">
+        <img src="https://static2.medplusmart.com/products/_8913b7_/VASE0115_S.jpg" class="card-img-top" alt="non">
+          <!-- <h5 class="card-title">Card title</h5> -->
+          <p class="card-text">VASELINE INTENSIVE CARE.</p>
+          <P style="color: red;">RS 430</P>
+          <a href="#" class="btn btn-danger">Add to Cart</a>
+      </div>
+      <div class="card" style="width:150px; border: 0; margin-top: 10px; margin-left: 40px;">
+        <img src="https://static2.medplusmart.com/products/_671b80_/PAMP0179_S.jpg" class="card-img-top" alt="non">
+          <!-- <h5 class="card-title">Card title</h5> -->
+          <p class="card-text">PAMPERS PREMIUM PACK.</p>
+          <P style="color: red;">RS 430</P>
+          <a href="#" class="btn btn-danger">Add to Cart</a>
+      </div>
+      <div class="card" style="width:150px; border: 0; margin-top: 10px; margin-left: 40px;">
+        <img src="https://static2.medplusmart.com/products/_288e21_/AMRU0033_S.jpg" class="card-img-top" alt="non">
+          <!-- <h5 class="card-title">Card title</h5> -->
+          <p class="card-text">RELIF COLD RUB 30 GM.</p>
+          <P style="color: red;">RS 430</P>
+          <a href="#" class="btn btn-danger">Add to Cart</a>
+      </div>
+    </div>
+</div>
+
+<!-- banner -->
+<div class="banner mb-4">
+  <img src="https://static2.medplusmart.com/live/bannerImage/Mart/2ac6214f8202581fa6707fd8c86131ae.jpg" width="100%"/>
+</div>
+<div class="banner mb-4">
+  <img src="https://static2.medplusmart.com/live/bannerImage/Mart/bd4f860df5f1e9d98cf43f4141578d38.jpg" width="100%"/>
+</div>
+<div class="banner mb-4">
+  <img src="https://static2.medplusmart.com/live/bannerImage/Mart/554e97ce00ded2a538b58a8bde2ce3a3.jpg" width="100%"/>
+</div>
+<div class="banner mb-4">
+  <img src="https://static2.medplusmart.com/live/bannerImage/Mart/e0c25754614ff51e11986663f3c2fd04.jpg" width="100%"/>
+</div>
+<div class="banner mb-4">
+  <img src="https://static2.medplusmart.com/live/bannerImage/Mart/fe1872bb374d32c2915f59c10603316c.jpg" width="100%"/>
+</div>
+<div class="banner mb-4">
+  <img src="https://static2.medplusmart.com/live/bannerImage/Mart/429c327727836d07491c33201a51ab0c.jpg" width="100%"/>
+</div>
+
+<div class="calegory mb-4">
+<div class="head mb-4">
+  <span>Why Cure+ Mart</span>
+</div>
+<div class="row">
+<div class="col">
+  <img src="https://static1.medplusmart.com/medplusmart/assets/_3649eddcab909706a1c11a0b62ddd161_/new_theme/web/images/new/download-app.png" width="100%"/>
+</div>
+<div class="col">
+  <h3>Download Our App Now</h3>
+  <p>Buy general store products and medicines from
+    your mobile at anytime, anywhere
+    Available on:</p>
+
+</div>
+</div>
+
+</div>
+
+<!-- footer -->
+<footer
+class="text-center text-lg-start text-dark"
+style="background-color: #ECEFF1"
+>
+<!-- Section: Social media -->
+<section
+   class="d-flex justify-content-between p-4 text-white"
+   style="background-color: #21D192"
+   >
+<!-- Left -->
+<div class="me-5">
+<span>CURE + WEB APPLICATION :</span>
+</div>
+</section>
+<!-- Section: Social media -->
+
+<!-- Section: Links  -->
+<section class="">
+<div class="container text-center text-md-start mt-5">
+<!-- Grid row -->
+<div class="row mt-3">
+<!-- Grid column -->
+<div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+  <!-- Content -->
+  <h6 class="text-uppercase fw-bold">CURE+</h6>
+  <hr
+      class="mb-4 mt-0 d-inline-block mx-auto"
+      style="width: 60px; background-color: #7c4dff; height: 2px"
+      />
+  <p>
+    Here you can use to buy medicines find doctors 
+    and you can get gym suppliment & vitamins
+  </p>
+</div>
+<!-- Grid column -->
+
+<!-- Grid column -->
+<div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+  <!-- Links -->
+  <h6 class="text-uppercase fw-bold">Products</h6>
+  <hr
+      class="mb-4 mt-0 d-inline-block mx-auto"
+      style="width: 60px; background-color: #7c4dff; height: 2px"
+      />
+  <p>
+    <a href="#!" class="text-dark">Medicines</a>
+  </p>
+  <p>
+    <a href="#!" class="text-dark">Pharmacy</a>
+  </p>
+  <p>
+    <a href="#!" class="text-dark">Ayurvedic</a>
+  </p>
+  <p>
+    <a href="#!" class="text-dark">personal care</a>
+  </p>
+</div>
+<!-- Grid column -->
+
+<!-- Grid column -->
+<div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+  <!-- Links -->
+  <h6 class="text-uppercase fw-bold">Useful links</h6>
+  <hr
+      class="mb-4 mt-0 d-inline-block mx-auto"
+      style="width: 60px; background-color: #7c4dff; height: 2px"
+      />
+  <p>
+    <a href="#!" class="text-dark">Your Account</a>
+  </p>
+  <p>
+    <a href="#!" class="text-dark">Become an Affiliate</a>
+  </p>
+  <p>
+    <a href="#!" class="text-dark">Shipping Rates</a>
+  </p>
+  <p>
+    <a href="#!" class="text-dark">Help</a>
+  </p>
+</div>
+<!-- Grid column -->
+
+<!-- Grid column -->
+<div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+  <!-- Links -->
+  <h6 class="text-uppercase fw-bold">Contact</h6>
+  <hr
+      class="mb-4 mt-0 d-inline-block mx-auto"
+      style="width: 60px; background-color: #7c4dff; height: 2px"
+      />
+  <p><i class="fas fa-home mr-3"></i> Chennai, NY 10012, US</p>
+  <p><i class="fas fa-envelope mr-3"></i> cureplus@gmail.com</p>
+  <p><i class="fas fa-phone mr-3"></i> + 044 234 567 88</p>
+  <p><i class="fas fa-print mr-3"></i> + 044 234 567 89</p>
+</div>
+<!-- Grid column -->
+</div>
+<!-- Grid row -->
+</div>
+</section>
+<!-- Section: Links  -->
+
+<!-- Copyright -->
+<div
+class="text-center p-3"
+style="background-color: rgba(0, 0, 0, 0.2)"
+>
+© 2022 CURE+:
+<a class="text-dark" href="https://mdbootstrap.com/"
+>cure-plus.com</a
+>
+</div>
+</footer>
+
+
+</div>

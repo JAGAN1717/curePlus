@@ -1,0 +1,17 @@
+.flex{
+    display: flex;
+}
+.flex input {
+    margin-left: 700px;
+    margin-right: 10px;
+}
+.log{
+    margin-left: 60px;
+}
+.cure-plus{
+    font-size: medium;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+.nav-link{
+    font-weight: 500;
+}

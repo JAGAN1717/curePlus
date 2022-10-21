@@ -1,0 +1,37 @@
+.carousel-inner img{
+/* height: 400px; */
+margin-top: 10px;
+}
+.calegory{
+    background-color:white;
+    padding-top: 50px;
+    padding-left: 30px;
+    padding-bottom: 30px;
+}
+.calegory .rounded-circle{
+    border: 1px solid rgb(145, 142, 142);
+    padding: 30px;
+}
+.rounded-circle:hover{
+    background-color:#50dbb1;
+    transform: translate(-5px);
+-webkit-box-shadow: 3px 3px 12px 0px rgba(0,0,0,0.75);
+-moz-box-shadow: 3px 3px 12px 0px rgba(0,0,0,0.75);
+box-shadow: 3px 3px 12px 0px rgba(0,0,0,0.75);
+}
+.home-comp{
+    background-color: whitesmoke;
+    margin-top: 60px;
+}
+.head span{
+    font-weight: 500;
+    font-size: large;
+}
+.calegory .title{
+    font-weight: 500;
+    cursor: pointer;
+    
+}
+.calegory .text-center  :hover{
+    color: red;   
+}
